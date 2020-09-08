@@ -29,10 +29,10 @@ The completion of these questions is mandatory for MVP. However, passing the qui
 
 ### Task 3: Stretch Problems
 
-- Add seed data to the database using `knex seeds`
-- Add `UPDATE` and `DELETE` operations to your API.
-- Write a schema file for a `sales` table. This table should track information on the sale of each car. You may wish to research `foreign keys` in order to link each sale to the entry in `cars` which sold.
+-[x] Add seed data to the database using `knex seeds`
+-[x] Add `UPDATE` and `DELETE` operations to your API.
+-[ ] Write a schema file for a `sales` table. This table should track information on the sale of each car. You may wish to research `foreign keys` in order to link each sale to the entry in `cars` which sold.
 
 ## Submission Format
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
-* [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your PR
+* [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
+* [x] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your PR
