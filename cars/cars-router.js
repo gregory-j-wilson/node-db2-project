@@ -46,13 +46,30 @@ router.get('/', (req, res) => {
 
 
 
-router.get('/:id', (req, res) => {
- 
+router.put('/:id', (req, res) => {
+    
+    db('cars').where({ id: req.params.id }).update(req.body)
+        .then(count => {
+            res.status(200).json({Success: `${count} car(s) updated` })
+        })
+        .catch(err => {
+          res.status(500).json({error: 'Could not update car info.'})
+        })
+
 });
 
 
 router.delete('/:id', (req, res) => {
+
+    db('cars').where({ id: req.params.id }).del()
+    .then(count => {
+        res.status(200).json({Success: `${count} car(s) deleted` })
+    })
+    .catch(err => {
+      res.status(500).json({error: `Could not delete car and ${err.message}`})
+    })
  
 });
+
 
 module.exports = router;
